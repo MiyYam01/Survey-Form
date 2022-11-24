@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>freeCodeCamp Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="head">
+        <h1 id="title" class="center-text">My Survey Form</h1>
+        <p id="description" class="description center-text">
+          Thank you for going along with everything!
+        </p>
+      </header>
+      <form id="survey-form" action="page.html">
+        <div class="group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            id="name"
+            class="control"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            id="email"
+            class="control"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="group">
+          <label for="number" id="number-label"
+            >Age <span id="option">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="number"
+            class="control"
+            id="number"
+            min="5"
+            max="80"
+            placeholder="Age"
+          />
+        </div>
+        <div class="group">
+          <p>Are you a cat person or a dog person?</p>
+          <select name="role" id="dropdown" class="control" required>
+            <option disabled selected value="">Select preference</option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="cat-dog">Both Cat and Dog</option>
+            <option value="not-cat-dog">Neither Cat nor Dog</option>
+
+          </select>
+        </div>
+        <div class="group">
+          <p>What Emoji best describes you?</p>
+          <label for="chill">
+            <input
+              type="radio"
+              name="recommend"
+              id="chill"
+              class="radio"
+              value="chill"
+              checked
+            />	
+&#128526;</label
+          >
+          <label for="happy">
+            <input
+              type="radio"
+              name="recommend"
+              id="happy"
+              class="radio"
+              value="happy"
+            />&#128513;</label
+          >
+          <label for="in-love">
+            <input
+              type="radio"
+              name="recommend"
+              id="in-love"
+              class="radio"
+              value="in-love"
+            />&#129392;</label
+          >
+          <label for="flirt">
+            <input
+              type="radio"
+              name="recommend"
+              id="flirt"
+              class="radio"
+              value="flirt"
+            />&#128521;</label
+          >
+          <label for="open">
+            <input
+              type="radio"
+              name="recommend"
+              id="open"
+              class="radio"
+              value="open"
+            />&#129303;</label
+          >
+          <label for="weary">
+            <input
+              type="radio"
+              name="recommend"
+              id="weary"
+              class="radio"
+              value="weary"
+            />&#128553;</label
+          >
+          <label for="goofy">
+            <input
+              type="radio"
+              name="recommend"
+              id="goofy"
+              class="radio"
+              value="goofy"
+            />&#128540;</label
+          >
+          <label for="uncaring">
+            <input
+              type="radio"
+              name="recommend"
+              id="uncaring"
+              class="radio"
+              value="uncaring"
+            />&#128580;</label
+          >
+          <label for="none">
+            <input
+              type="radio"
+              name="recommend"
+              id="none"
+              class="radio"
+              value="none"
+            />None of the above</label
+          >
+        </div>
+        <div class="group">
+          <p>Are you inlove?</p>
+          <select name="favorite" id="feature" class="control" required>
+            <option disabled selected value="">Select an option</option>
+            <option value="yes">Yup</option>
+            <option value="no">Nope</option>
+            <option value="complicated">It's Complicated</option>
+            <option value="taken">Taken</option>
+            <option value="situationship">It's a Situationship</option>
+            <option value="open-source">Friendzoned</option>
+            <option value="meh">Meh</option>
+          </select>
+        </div>
+        <div class="group">
+          <p>
+            What traits do you like in a partner?
+            <span id="option">(Don't be shy, Check all that apply)</span>
+          </p>
+          <label for="mature"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="mature"
+              id="mature"
+              class="checkbox"
+            />Mature</label
+          >
+          <label for="whim"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="whim"
+              id="whim"
+              class="checkbox"
+            />Whimsical</label
+          >
+          <label for="old"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="old"
+              id="old"
+              class="checkbox"
+            />Old-fashioned</label
+          >
+          <label for="art"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="art"
+              id="art"
+              class="checkbox"
+            />Artful</label
+          >
+          <label for="witty"
+            ><input
+              type="checkbox"
+              name="interest"
+              id="witty"
+              class="checkbox"
+              value="witty"
+            />Witty</label
+          >
+          <label for="optimistic"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="optimistic"
+              id="optimistic"
+              class="checkbox"
+            />Optimistic</label
+          >
+          <label for="logic"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="logic"
+              id="logic"
+              class="checkbox"
+            />Logical</label
+          >
+          <label for="dynamic"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="dynamic"
+              id="dynamic"
+              class="checkbox"
+            />Dynamic</label
+          >
+          <label for="wild"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="wild"
+              id="wild"
+              class="checkbox"
+            />Wild</label
+          >
+          <label for="gentle"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="gentle"
+              id="gentle"
+              class="checkbox"
+            />Gentle</label
+          >
+          <label for="real"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="real"
+              id="real"
+              class="checkbox"
+            />Realistic</label
+          >
+          <label for="idea"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="idea"
+              id="idea"
+              class="checkbox"
+            />Idealistic</label
+          >
+          <label for="perfect"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="perfect"
+              id="perfect"
+              class="checkbox"
+            />Perfectionist</label
+          >
+          <label for="complex"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="complex"
+              id="complex"
+              class="checkbox"
+            />Complex</label
+          >
+          <label for="simple"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="simple"
+              id="simple"
+              class="checkbox"
+            />Simple</label
+          >
+          <label for="politics"
+            ><input
+              type="checkbox"
+              name="interest"
+              value="politics"
+              id="politics"
+              class="checkbox"
+            />Political</label
+          >
+         
+        </div>
+        <div class="group">
+          <p>Tell me about your First Love.</p>
+          <textarea
+            name="story"
+            id="comment"
+            class="suggest"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="group">
+          <button id="submit" type="submit">
+            <span>Submit</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
